@@ -1,0 +1,137 @@
+/* 项目详情页的整体布局 */
+.project-details {
+  padding: 80px 20px;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  font-family: 'Centra', sans-serif;
+  min-height: 100vh; /* 页面至少占满整个视窗高度 */
+}
+
+.project-details h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #EE82EE; /* 紫色渐变字体 */
+  text-shadow: 0 0 15px rgba(238, 130, 238, 0.8), 0 0 30px rgba(238, 130, 238, 0.6);
+  margin-bottom: 40px;
+}
+
+.project-details p {
+  font-size: 18px;
+  color: #B8B8B8;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  text-align: justify;
+}
+
+/* 项目技术栈图标区域 */
+.project-details .tech-stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.project-details .tech-stack img {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.project-details .tech-stack img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(238, 130, 238, 0.5); /* 悬停时的霓虹发光效果 */
+}
+
+/* 项目截图区域 */
+.project-details .screenshots {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.project-details .screenshots img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-details .screenshots img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(238, 130, 238, 0.5); /* 图片悬停发光效果 */
+}
+
+/* 项目按钮区域 */
+.project-details .project-btns {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-details .project-btn {
+  padding: 12px 28px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #4A2FBD;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project-details .project-btn:hover {
+  background-color: #EE82EE;
+  box-shadow: 0 8px 20px rgba(238, 130, 238, 0.6); /* 按钮悬停时的发光效果 */
+}
+
+/* 项目外部链接样式 */
+.project-details .external-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.project-details .external-links a {
+  color: #EE82EE;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.project-details .external-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(238, 130, 238, 0.8); /* 悬停时的发光效果 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .project-details h2 {
+    font-size: 36px;
+  }
+  
+  .project-details .screenshots img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-details .project-btns {
+    flex-direction: column;
+  }
+
+  .project-details .tech-stack img {
+    width: 40px;
+    height: 40px;
+  }
+}
