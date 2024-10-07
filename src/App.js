@@ -19,7 +19,6 @@ function App() {
     <>
       {!isDetailPage && <NavBar />}  {/* 如果不是项目详情页，显示导航栏 */}
       <Routes>
-        {/* 根路径应该包含多个组件 */}
         <Route 
           path="/" 
           element={
@@ -30,7 +29,6 @@ function App() {
               <Skills />
               <Projects />
               <Contact />
-              <Footer />
             </>
           } 
         />
@@ -46,6 +44,7 @@ function App() {
     </>
   );
 }
+
 
 export default function AppWrapper() {
   return (
