@@ -1457,19 +1457,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .screenshots {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: 1fr; /* 每行显示一个图片 */
+  gap: 30px; /* 调整图片间距 */
 }
 
 .screenshot-img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-  transition: transform 0.3s ease;
+  width: 80%; /* 设置图片的宽度为容器的80% */
+  height: auto; /* 保持图片的宽高比 */
+  border-radius: 10px; /* 圆角 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* 阴影效果 */
+  transition: transform 0.3s ease; /* 鼠标悬停时的变换效果 */
 }
 
 .screenshot-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* 鼠标悬停时放大图片 */
 }
 
 .error-message {
@@ -1478,3 +1479,128 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   margin-top: 50px;
 }
+
+
+/* TimeLine 布局样式 */
+.industry-experience {
+  padding: 60px 0;
+  background-color: #1a1a1a;
+  margin-bottom: 100px; /* 增加底部间距 */
+}
+
+.industry-experience h2 {
+  font-size: 45px;
+  color: #EE82EE;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.industry-experience h3 {
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* 时间线布局 */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  margin: 0 auto;
+  max-width: 800px;
+  border-left: 3px solid #EE82EE;  /* 中间的线 */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.timeline-item .timeline-icon {
+  position: absolute;
+  left: -15px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #EE82EE;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-item .timeline-content {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-item h3 {
+  font-size: 24px;
+  color: #EE82EE;
+}
+
+.timeline-item p {
+  font-size: 16px;
+  color: #B8B8B8;
+}
+
+.timeline-item .icon {
+  margin-right: 10px;
+  color: #EE82EE;
+}
+
+/* 图片样式 */
+.experience-image {
+  width: 100%; /* 图片的宽度自适应卡片 */
+  max-width: 100%;  /* 限制图片最大宽度 */
+  height: auto;  /* 保持图片比例 */
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* 确保图片不会变形 */
+}
+
+/* 视频链接样式 */
+.video-player {
+  margin-top: 10px;
+}
+
+.video-player a {
+  color: #FFD700; /* 金色视频链接 */
+  text-decoration: none;
+}
+
+.video-player a:hover {
+  text-decoration: underline;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .timeline-item {
+    padding-left: 30px;
+  }
+
+  .timeline-item .timeline-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .timeline-item h3 {
+    font-size: 20px;
+  }
+
+  .timeline-item p {
+    font-size: 14px;
+  }
+
+  .experience-image {
+    width: 100%; /* 在小屏幕上保持图片适应 */
+    max-width: 100%;  /* 移动设备上让图片占满可用空间 */
+  }
+}
+

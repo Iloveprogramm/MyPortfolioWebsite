@@ -10,6 +10,9 @@ import projImg9 from "../assets/img/Interactive-Mirror.png";
 import projImg10 from "../assets/img/HospitalManagementSystem.jpeg";
 import projImg11 from "../assets/img/SimpleBankingSystem.jpeg";
 import projImg12 from "../assets/img/TextEditor.jpeg";
+import bookWe from "../assets/projectImage/Book-We.png";
+import bookCart from "../assets/projectImage/Book-Cart.png";
+import bookTest from "../assets/projectImage/Book-Test.png";
 
 import htmlIcon from "../assets/img/html5.svg";
 import cssIcon from "../assets/img/css3.svg";
@@ -31,48 +34,89 @@ import reactIcon from "../assets/img/react.svg";
 import xamppIcon from "../assets/img/xampp.svg";
 import mongodbIcon from "../assets/img/mongodb.svg";
 import nextjsIcon from "../assets/img/nextjs.svg";
+import bookOrderSystemBlog from "../assets/img/BookBLOG.pdf";
+
+
 
 export const projects = [
   {
     id: 1,
     title: "Book Online Order System",
-    date: "2023-06-15",  // 添加项目创建时间
-    description: "A platform for book enthusiasts to explore, review, and order their favorite books. Built with HTML, CSS, JS, and PHP.",
+    date: "2023-08 to 2023-10", // 项目从2023年8月到2023年10月
+    description: `The **Book Online Order System** is an online platform that allows users to browse, order, and manage book purchases. Developed as a capstone project for the *41026 Advanced Software Development* course, it follows **agile development methodologies** to ensure collaboration and iterative progress.
+  
+  __Key Features__:
+  - **Book Management**: Administrators can manage the book catalog (add, update, delete).
+  - **Order Management**: Users can place orders and track their purchase history.
+  - **User Management**: Includes user registration, login, and account management.
+  - **Payment Integration**: Secure online payment processing.
+  - **Review and Search**: Users can search for books and leave reviews.
+  - **Wishlist and Shipping Management**: Users can manage wishlists and shipping details.
+  
+  __Tech Stack__:
+  __Frontend__: **HTML, CSS, JavaScript, Bootstrap**
+  __Backend__: **PHP, PHPUnit**
+  __Database & Server__: **XAMPP, MySQL**
+  __CI/CD__: **Azure (YAML-based CI/CD pipeline)**
+  __Deployment__: **000webhost, FTP**
+  __Email Service__: **PHPMailer**
+  
+  __Team Structure__:
+  - **Chenjun Zheng (Team Leader)**: Book and Order Management
+  - **Yuxin Liu**: User Management, Payment Integration
+  - **Mandana Ebrahimian**: Reviews, Search Functionality
+  - **Matthew Georgans**: Shipping, Wishlist Management
+  
+  The project was deployed on **000webhost** with **Azure CI/CD pipelines** ensuring automated testing and smooth deployment.
+  
+ If you would like to see more detailed information about this project, including the development process, challenges, and learnings, please refer to the [Book Online Order System Blog (PDF)](${bookOrderSystemBlog}).`,
     imgUrl: projImg1,
     techStack: [
       { name: "HTML", icon: htmlIcon },
       { name: "CSS", icon: cssIcon },
       { name: "JavaScript", icon: jsIcon },
-      { name: "PHP", icon: phpIcon }
+      { name: "PHP", icon: phpIcon },
+      { name: "BootStrap", icon: bootstrapIcon },
+      { name: "Xampp", icon: xamppIcon }
     ],
-    role: "Front-End Developer",
-    learnings: "Learned more about working with PHP and improved my knowledge on backend integration."
+    screenshots: [bookWe,bookCart, bookTest], 
+    role: "Team Leader & Full Stack Developer",
+    learnings: `As the **Team Leader & Full Stack Developer**, this project provided me with valuable hands-on experience in leading a development team and managing both frontend and backend tasks. I deepened my understanding of **Agile development methodologies**, ensuring collaboration and iterative progress throughout the project. I also became proficient in **Continuous Integration (CI)** and **Continuous Deployment (CD)**, utilizing **Azure Web Services** and **YAML files** to implement a full CICD pipeline. Additionally, I gained significant experience in **automated testing** using **PHPUnit**, which enhanced the reliability of the system. The project further solidified my skills in using **PHPMailer** for email services and deploying the system via **000webhost** with **FTP** integration. Overall, this project enhanced my technical abilities, leadership skills, and practical knowledge of **DevOps** practices, including automated testing and deployment strategies.`
   },
   {
     id: 2,
     title: "Online Car Rental System",
-    date: "2023-07-15",  // 添加项目创建时间
-    description: "A digital platform to rent cars with a seamless user experience. Built with HTML, CSS, JS, PHP, and Ajax.",
-    imgUrl: projImg2,
+    date: "2023-04 to 2023-06",
+    description: `The **Online Car Rental System** is a dynamic, simulated online car rental portal for the company "Hertz-UTS". The platform streamlines the process of renting cars by allowing customers to browse through various car categories, view detailed information, and manage their reservations through a shopping cart system.`,
+    keyFeatures: [
+      "Car Categories: Display available cars from multiple categories (Sedan, Wagon, SUV), with dynamic data loading from a JSON file.",
+      "Reservation Management: Allow customers to add, modify, and remove cars from their reservation cart.",
+      "Error Handling: Handle edge cases like adding unavailable cars or checking out without any cars in the cart.",
+      "AJAX Integration: Asynchronous data retrieval ensures that data changes in the backend are dynamically reflected."
+    ],
     techStack: [
       { name: "HTML", icon: htmlIcon },
       { name: "CSS", icon: cssIcon },
       { name: "JavaScript", icon: jsIcon },
-      { name: "PHP", icon: phpIcon }
+      { name: "PHP", icon: phpIcon },
+      { name: "BootStrap", icon: bootstrapIcon },
+      { name: "Xampp", icon: xamppIcon }
     ],
     role: "Full-Stack Developer",
-    learnings: "Enhanced my understanding of Ajax and real-time data processing."
-  },
+    learnings: `As a Full-Stack Developer, this project enhanced my skills in designing and implementing a fully functional car rental system. I gained hands-on experience in AJAX for asynchronous data handling, session management for customer carts, and dynamic data loading using JSON. This project also improved my ability to handle edge cases like unavailable cars, ensuring a seamless user experience. Additionally, I strengthened my understanding of PHP and session management for building robust web applications.`,
+    imgUrl: projImg2
+  },  
   {
     id: 3,
     title: "Online Grocery Store",
-    date: "2023-06-15",  // 添加项目创建时间
+    date: "2023-02 to 2023-04",  // 添加项目创建时间
     description: "An e-commerce platform for users to browse and purchase groceries. Developed using HTML, CSS, JS, and PHP.",
     imgUrl: projImg3,
     techStack: [
       { name: "HTML", icon: htmlIcon },
       { name: "CSS", icon: cssIcon },
       { name: "JavaScript", icon: jsIcon },
+      { name: "PHP", icon: phpIcon },
       { name: "PHP", icon: phpIcon }
     ],
     role: "Full-Stack Developer",
@@ -93,7 +137,7 @@ export const projects = [
   {
     id: 5,
     title: "IoTBay",
-    date: "2023-06-15",  // 添加项目创建时间
+    date: "2023-02 to 2023-05",  // 添加项目创建时间
     description: "An IoT device shopping platform. Built with Java and JSP.",
     imgUrl: projImg5,
     techStack: [

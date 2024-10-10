@@ -34,7 +34,7 @@ export const Projects = () => {
       description: "A digital platform to rent cars with a seamless user experience. Built with HTML, CSS, JS, PHP, and Ajax.",
       imgUrl: projImg2,
       githubUrl: "https://github.com/Iloveprogramm/Online-Car-Rental-System",
-      youtubeUrl: "https://www.youtube.com/watch?v=L3T_ofHz27s",
+      youtubeUrl: "https://www.youtube.com/watch?v=tKUiPdZDjmI",
       tag: "school",
       techStack: ["HTML", "CSS", "JS", "PHP"],
     },

@@ -10,6 +10,7 @@ import { Footer } from "./components/Footer";
 import { Education } from "./components/Education";
 import { About } from "./components/About";
 import { ProjectDetails } from './components/ProjectDetails';
+import { IndustryExperience } from './components/IndustryExperience';
 
 function App() {
   const location = useLocation(); // 获取当前路径
@@ -26,6 +27,7 @@ function App() {
               <Banner />
               <About />
               <Education />
+              <IndustryExperience />
               <Skills />
               <Projects />
               <Contact />

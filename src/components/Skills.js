@@ -37,11 +37,11 @@ export const Skills = () => {
     { icon: jsIcon, name: "JavaScript", level: "Intermediate", color: "#F7DF1E", category: "Frontend" },
     { icon: reactIcon, name: "React", level: "Learning", color: "#61DAFB", category: "Frontend" },
     { icon: bootstrapIcon, name: "Bootstrap", level: "Intermediate", color: "#563D7C", category: "Frontend" },
-    { icon: NextjsIcon, name: "Next.js", level: "Intermediate", color: "#FFFFFF", category: "Frontend" },
+    { icon: NextjsIcon, name: "Next.js", level: "Learning", color: "#FFFFFF", category: "Frontend" },
 
     
     // 后端技能
-    { icon: nodejsIcon, name: "Node.js", level: "Intermediate", color: "#339933", category: "Backend" },
+    { icon: nodejsIcon, name: "Node.js", level: "Learning", color: "#339933", category: "Backend" },
     { icon: javaIcon, name: "Java", level: "Intermediate", color: "#007396", category: "Backend" },
     { icon: phpIcon, name: "PHP", level: "Intermediate", color: "#777BB4", category: "Backend" },
     { icon: mysqlIcon, name: "MySQL", level: "Intermediate", color: "#4479A1", category: "Backend" },
